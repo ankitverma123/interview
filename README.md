@@ -25,4 +25,4 @@ You can easily switch between these MIME types using a simple header parameter, 
  - SIEVE_ALGORITHM
 
 > http://localhost:8080/primes/20?algorithm=CONCURRENT
-> Using this request parameters we can easily switch between the various implementation provided by the application.
+> Using this request parameters we can easily switch between the various implementation provided by the application. Using strategy design patterns system identifies which implementation needs to be invoked. This also leverage the EHCachev3 cache mechanism to store algorithm wise as a cache key.
